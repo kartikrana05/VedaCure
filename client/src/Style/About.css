@@ -1,0 +1,93 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-doctor-img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+    margin-top: 171px;
+}
+
+.about-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-tag {
+  background-color: #d0f0f9;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-highlight-dark {
+  color: #081c47;
+}
+
+.about-highlight-blue {
+  color: #00c5f9;
+}
+
+.about-description {
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.about-services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-service {
+  max-width: 400px;
+}
+
+.about-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-view-all {
+  background-color: #081c47;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}

@@ -1,0 +1,178 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e9f6fd;
+  color: #1e1e1e;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.appointment-btn {
+  background-color: #00123d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.badge {
+  background-color: #d6f0f8;
+  color: #1e1e1e;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #00bfd8;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.learn-more-btn {
+  background-color: #00123d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Hero Image Section */
+.hero-image {
+  position: relative;
+  width: 40%;
+}
+
+.doctor-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Floating Boxes */
+.diagnosis-box,
+.contact-box {
+  position: absolute;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  font-size: 0.85rem;
+}
+
+.diagnosis-box {
+  bottom: 40px;
+  left: 20px;
+  text-align: center;
+}
+
+.diagnosis-percent {
+  color: #00bfd8;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.diagnosis-label {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.contact-box {
+  top: 20px;
+  right: 20px;
+}
+
+.contact-question {
+  font-weight: 500;
+}
+
+.contact-email {
+  color: #00bfd8;
+  margin-top: 5px;
+}
