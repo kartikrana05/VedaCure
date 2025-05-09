@@ -17,7 +17,7 @@ Telehealth Solution for the Veersa Hackathon 2026 — A full-stack application t
 - Backend: Node.js with Express
 - Database: MongoDB 
 - Real-time Communication: WebRTC
-- Payment Processing: Stripe
+- payment Processing: Stripe
 - Transcription: Google Cloud Speech-to-Text
 - Authentication: Auth0
 - Video Conferencing: Twilio Video
