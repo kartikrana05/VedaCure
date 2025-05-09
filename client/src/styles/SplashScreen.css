@@ -1,0 +1,95 @@
+.splash-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5d6e6 0%, #eac6ce 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splash-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(230,57,86,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+  padding: 56px 48px 40px 48px;
+  text-align: center;
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.splash-logo-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 24px;
+}
+.splash-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e63956;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+.splash-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 70%;
+  min-width: 180px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(230,57,86,0.08);
+}
+.splash-btn:hover {
+  background: #c72d45;
+  box-shadow: 0 4px 16px rgba(230,57,86,0.15);
+}
+@media (max-width: 600px) {
+  .splash-card {
+    padding: 32px 8vw 24px 8vw;
+    min-width: 0;
+    max-width: 98vw;
+  }
+  .splash-logo-img {
+    width: 56px;
+    height: 56px;
+  }
+  .splash-title {
+    font-size: 2rem;
+  }
+}
+
+.splash-logo-large {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.vedacure-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #e63956;
+  letter-spacing: 1px;
+}
+
+.get-started-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.get-started-btn:hover {
+  background: #c72d45;
+} 
