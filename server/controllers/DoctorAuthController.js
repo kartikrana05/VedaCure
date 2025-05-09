@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config({path:"../.env"});
-console.log("JWT secret is:", process.env.JWT_SECRET);
+// console.log("JWT secret is:", process.env.JWT_SECRET);
 export const register= async (req,res)=>{
     try {
         const {name, username, email, password,specialization,experience,phone,address,licenseNumber } = req.body;

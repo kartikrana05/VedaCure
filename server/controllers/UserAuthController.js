@@ -1,7 +1,7 @@
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken'
-
+import createError from 'http-errors';
 import dotenv from 'dotenv';
 dotenv.config({path:'../.env'});
 console.log("JWT secret is:", process.env.JWT_SECRET);
@@ -27,7 +27,7 @@ export const register = async (req, res) => {
 
         await newUser.save();
 
-        const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, { expiresIn: '1m' });
         console.log('signed token', token);
         // Set the token in the response header
         res.setHeader('Authorization', `Bearer ${token}`);
