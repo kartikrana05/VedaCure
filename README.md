@@ -13,9 +13,9 @@ Telehealth Solution for the Veersa Hackathon 2026 — A full-stack application t
 
 ## Tech Stack
 
-- Frontend: Next.js with TypeScript
+- Frontend: React.js
 - Backend: Node.js with Express
-- Database: PostgreSQL
+- Database: MongoDB 
 - Real-time Communication: WebRTC
 - Payment Processing: Stripe
 - Transcription: Google Cloud Speech-to-Text
