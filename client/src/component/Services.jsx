@@ -52,10 +52,8 @@ export default function Services() {
         </div>
 
         <div className="services-image">
-          <img src="/images/phone-mockup.png" alt="Phone" />
+          {/* <img src="/images/phone-mockup.png" alt="Phone" /> */}
           <div className="arrow-controls">
-            <button className="arrow-btn">←</button>
-            <button className="arrow-btn">→</button>
           </div>
         </div>
       </div>
