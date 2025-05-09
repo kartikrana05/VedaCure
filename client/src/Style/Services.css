@@ -1,6 +1,8 @@
 .services-container {
   background-color: #eaf7fc;
   padding: 50px 30px;
+  overflow: hidden;
+  position: relative;
 }
 
 .services-tag {
@@ -22,19 +24,17 @@
   color: #00c5f9;
 }
 
-.services-content {
-  display: flex;
-  flex-wrap: nowrap; /* prevents wrapping */
-  gap: 40px;
-  align-items: flex-start;
-  justify-content: space-between;
+.services-grid-wrapper {
+  position: relative;
+  margin-top: 40px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* force 4 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card {
@@ -43,6 +43,10 @@
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .service-icon {
@@ -68,32 +72,35 @@
   font-weight: bold;
 }
 
-.services-image {
-  position: relative;
-  flex: 1;
-  max-width: 400px;
-  margin: auto;
-}
-
-.services-image img {
-  width: 100%;
-  max-width: 400px;
-}
-
-.arrow-controls {
+/* Phone overlay logic */
+.phone-overlay {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
+  bottom: -40px;
+  right: -10px;
+  width: 220px;
+  z-index: 2;
+  pointer-events: none;
 }
 
-.arrow-btn {
-  background-color: white;
-  border: none;
-  padding: 8px 14px;
-  font-size: 18px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+.phone-overlay img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .phone-overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }

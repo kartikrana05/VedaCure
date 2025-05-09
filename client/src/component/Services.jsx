@@ -24,22 +24,34 @@ export default function Services() {
     },
     {
       icon: '👁️',
-      title: 'Eye care',
+      title: 'Eye Care',
       description: 'Our Eye Care services include angioplasty to improve blood flow in the eye’s blood vessels.',
       doctors: '45+ Doctors',
+    },
+    {
+      icon: '💊',
+      title: 'Pharmacy',
+      description: 'We provide a range of pharmaceutical services to support your health journey.',
+      doctors: '20+ Doctors',
+    },
+    {
+      icon: '🩺',
+      title: 'Physiotherapy',
+      description: 'Our physiotherapy services help patients recover and improve mobility post-surgery.',
+      doctors: '18+ Doctors',
     }
   ];
 
   return (
     <div className="services-container">
       <div className="services-header">
-        <button className="services-tag">Our service</button>
+        <button className="services-tag">Our Services</button>
         <h1>
           Begin your journey to <span className="highlight-blue">better health</span> with our wellness services.
         </h1>
       </div>
 
-      <div className="services-content">
+      <div className="services-grid-wrapper">
         <div className="services-grid">
           {services.map((service, idx) => (
             <div className="service-card" key={idx}>
@@ -49,12 +61,8 @@ export default function Services() {
               <div className="service-footer">🔵 {service.doctors}</div>
             </div>
           ))}
-        </div>
 
-        <div className="services-image">
-          {/* <img src="/images/phone-mockup.png" alt="Phone" /> */}
-          <div className="arrow-controls">
-          </div>
+          {/* Phone image inside the grid, absolutely positioned over last two cards */}
         </div>
       </div>
     </div>
