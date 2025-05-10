@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config({path:"../.env"});
+import DoctorAvailability from "../models/DoctorAvailability.js";
 // console.log("JWT secret is:", process.env.JWT_SECRET);
 export const register= async (req,res)=>{
     try {
@@ -79,3 +80,7 @@ export const getAllDoctors = async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 };
+
+
+
+
