@@ -9,7 +9,7 @@ export default function Signin() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate successful sign in
-    navigate("/dashboard");
+    navigate("/home");
   };
 
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export default function Services() {
   const services = [
     {
@@ -43,18 +41,18 @@ export default function Services() {
   ];
 
   return (
-    <div className="services-container">
-      <div className="services-header">
+    <div className="services-container" data-scroll>
+      <div className="services-header" data-scroll data-scroll-speed="1.5">
         <button className="services-tag">Our Services</button>
         <h1>
           Begin your journey to <span className="highlight-blue">better health</span> with our wellness services.
         </h1>
       </div>
 
-      <div className="services-grid-wrapper">
+      <div className="services-grid-wrapper" data-scroll data-scroll-speed="1.2">
         <div className="services-grid">
           {services.map((service, idx) => (
-            <div className="service-card" key={idx}>
+            <div className="service-card" key={idx} data-scroll data-scroll-speed="1">
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

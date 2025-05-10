@@ -111,3 +111,135 @@
     font-size: 2rem;
   }
 } 
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+.splash-container, .onboarding-container {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.splash-logo {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.onboarding-img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.onboarding-dots {
+  margin: 20px 0;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #eac6ce;
+  border-radius: 50%;
+}
+.dot.active {
+  background: #e63956;
+}
+
+.onboarding-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.splash-single-container {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 60px 20px 40px 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.splash-logo-large {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.vedacure-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #e63956;
+  letter-spacing: 1px;
+}
+
+.get-started-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.get-started-btn:hover {
+  background: #c72d45;
+}
+
+.homepage-placeholder {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 1.5rem;
+  color: #333;
+}

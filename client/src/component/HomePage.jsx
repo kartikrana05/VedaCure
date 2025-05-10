@@ -1,17 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import doctorImg from "../assets/image/doctor.jpg";
-import About from "./About";
+import { useNavigate } from "react-router-dom";
 
-
-export default function HealthcareHomePage() {
-  const aboutRef = useRef(null);
-
-  const scrollToAbout = () => {
-    aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
+export default function HomePage() {
+  const navigate = useNavigate();
   return (
-    <div className="container">
+    <div id="home" className="container" data-scroll-section>
       {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-left">
@@ -19,14 +13,16 @@ export default function HealthcareHomePage() {
           <span className="brand-name">GreenLeaf Health</span>
         </div>
         <ul className="nav-links">
-          <li>Home</li>
-          <li onClick={scrollToAbout} style={{ cursor: "pointer" }}>About us</li>
-          <li>Departments</li>
-          <li>Doctors</li>
-          <li>Gallery</li>
-          <li>Contact us</li>
+          <li><a data-scroll-to href="#home">Home</a></li>
+          <li><a data-scroll-to href="#about">About us</a></li>
+          <li><a data-scroll-to href="#services">Services</a></li>
+          <li><a data-scroll-to href="#team">Doctors</a></li>
+          <li><a data-scroll-to href="#testimonial">Testimonials</a></li>
+          <li><a data-scroll-to href="#footer">Contact us</a></li>
         </ul>
-        <button className="appointment-btn">Book Appointment</button>
+        <button className="appointment-btn">
+          <a data-scroll-to href="#appointment">Book Appointment</a>
+        </button>
       </nav>
 
       {/* Hero Section */}
@@ -41,7 +37,9 @@ export default function HealthcareHomePage() {
             tailored to meet your unique needs, so you can thrive and enjoy a healthier,
             more fulfilling life.
           </p>
-          <button className="learn-more-btn">Learn More</button>
+          <button className="learn-more-btn">
+            <a data-scroll-to href="#about">Learn More</a>
+          </button>
 
           <div className="stats">
             <div>
@@ -54,7 +52,7 @@ export default function HealthcareHomePage() {
             </div>
             <div>
               <p className="stat-number">150+</p>
-              <p className="stat-label">Expert specialist</p>
+              <p className="stat-label">Expert specialists</p>
             </div>
           </div>
         </div>
@@ -73,11 +71,6 @@ export default function HealthcareHomePage() {
           </div>
         </div>
       </section>
-
-      {/* About Section */}
-      <div ref={aboutRef}>
-        <About />
-      </div>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaPhone, FaClock, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import logo from '../assets/image/logo.jpg'
+import logo from '../assets/image/logo.jpg';
+
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" data-scroll>
       <div className="footer-section">
         <h3>Get in touch</h3>
         <p><FaPhone /> Call us</p>
