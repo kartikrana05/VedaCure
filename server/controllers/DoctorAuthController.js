@@ -70,3 +70,12 @@ export const updateProfile = async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 };
+export const getAllDoctors = async (req, res) => {
+    try {
+        const doctors = await Doctor.find();
+        res.status(200).json({ message: "Doctors retrieved successfully", doctors });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+};
