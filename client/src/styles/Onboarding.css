@@ -1,0 +1,78 @@
+.onboarding-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5d6e6 0%, #eac6ce 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onboarding-container {
+  background: #fff;
+  /* background-image: url("https://accounts.practo.com/static/images/illustration.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px; */
+  max-width: 350px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.onboarding-img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.onboarding-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 12px;
+}
+.onboarding-desc {
+  font-size: 1.08rem;
+  color: #2d3a4a;
+  margin-bottom: 24px;
+}
+.onboarding-dots {
+  margin: 20px 0;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #eac6ce;
+  border-radius: 50%;
+}
+.dot.active {
+  background: #e63956;
+}
+.onboarding-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.onboarding-btn:hover {
+  background: #c72d45;
+}
+@media (max-width: 600px) {
+  .onboarding-container {
+    padding: 32px 8vw 24px 8vw;
+    min-width: 0;
+    max-width: 98vw;
+  }
+  .onboarding-img {
+    width: 120px;
+  }
+  .onboarding-title {
+    font-size: 1.2rem;
+  }
+} 
