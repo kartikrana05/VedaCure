@@ -26,15 +26,15 @@ const steps = [
 
 const WorkProcess = () => {
   return (
-    <section className="work-process-section">
-      <div className="section-header">
+    <section className="work-process-section" data-scroll>
+      <div className="section-header" data-scroll data-scroll-speed="1.5">
         <span className="section-label">● Our work process</span>
-        <h2>How it work</h2>
+        <h2>How it works</h2>
       </div>
 
-      <div className="work-grid">
+      <div className="work-grid" data-scroll data-scroll-speed="1.2">
         {steps.map((step, index) => (
-          <div className="work-card" key={index}>
+          <div className="work-card" key={index} data-scroll data-scroll-speed="1">
             <div className="step-number">{step.number} <span>Step</span></div>
             <img src={step.image} alt={step.title} className="work-image" />
             <h3>{step.title}</h3>

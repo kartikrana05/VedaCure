@@ -1,8 +1,9 @@
 import React from "react";
-import doctorImg from "../assets/image/grpdoc.jpg"; // Replace with your local image path
+import doctorImg from "../assets/image/grpdoc.jpg";
+
 export default function Appointment() {
   return (
-    <div className="appointment-container">
+    <div className="appointment-container" data-scroll>
       <div className="appointment-left">
         <h1>Book An Appointment</h1>
         <p>We will send you a confirmation within 24 hours.</p>
