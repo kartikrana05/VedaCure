@@ -1,0 +1,138 @@
+body {
+  background: #f8f9fb;
+}
+.book-appointment-wrapper {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fb;
+}
+.user-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px 16px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+.logo {
+  color: #3b5bdb;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.user-dashboard-header nav {
+  display: flex;
+  gap: 32px;
+}
+.user-dashboard-header nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.user-dashboard-header nav a:hover {
+  color: #3b5bdb;
+}
+.logout-btn {
+  background: #e63956;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #c72d45;
+}
+.book-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 32px;
+}
+.book-doctor-info {
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 12px;
+}
+.book-hospital {
+  color: #3b5bdb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.book-doctor {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+.book-specialization {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+.book-content {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,60,60,0.06);
+  padding: 32px 40px;
+  align-items: flex-start;
+}
+.book-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1rem;
+}
+.calendar-input {
+  padding: 8px 12px;
+  border: 1px solid #eac6ce;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+.book-slot-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1rem;
+}
+.book-slot-box select {
+  padding: 8px 12px;
+  border: 1px solid #eac6ce;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.book-btn {
+  background: #3b5bdb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.book-btn:hover {
+  background: #274bb5;
+}
+@media (max-width: 900px) {
+  .book-content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 10px;
+    align-items: stretch;
+  }
+  .book-main {
+    gap: 18px;
+  }
+} 

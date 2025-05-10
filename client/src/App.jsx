@@ -2,9 +2,15 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import Signup from './pages/Signup'
 import Signin from './pages/Signin'
+import UserDashBoardPage from './pages/UserDashBoardPage'
+import BookAppointment from './pages/BookAppointment'
+import DoctorProfile from './pages/DoctorProfile'
 import './App.css'
 import './styles/Onboarding.css'
 import './styles/SplashScreen.css'
+import './styles/UserDashBoardPage.css'
+import './styles/BookAppointment.css'
+import './styles/DoctorProfile.css'
 import imgFindDoctors from './assets/3725520.jpg';
 import imgBookAppointments from './assets/3951637.jpg';
 import imgOnlineConsultation from './assets/OO6PT80.jpg';
@@ -82,6 +88,9 @@ function App() {
         <Route path="/" element={<SplashOnboardingFlow />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/dashboard" element={<UserDashBoardPage />} />
+        <Route path="/book-appointment/:id" element={<BookAppointment />} />
+        <Route path="/doctor/:id" element={<DoctorProfile />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
