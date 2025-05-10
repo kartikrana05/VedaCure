@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import About from "./component/About"
 import Appointment from "./component/Appointment"
 import Footer from "./component/Footer"
 import Hc from "./component/Hc"
@@ -17,7 +16,6 @@ function App() {
   return (
     <div>
       <HomePage/>
-      <About/>
       <Services/>
       <Appointment/>
       <Hc/>
