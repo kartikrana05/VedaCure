@@ -1,35 +1,75 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import { useRef, useEffect } from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+
+import './App.css';
+import About from "./component/About";
+import Appointment from "./component/Appointment";
+import Footer from "./component/Footer";
+import Hc from "./component/Hc";
+import HomePage from "./component/HomePage";
+import Process from "./component/Process";
+import S2 from "./component/S2";
+import Testimonial from "./component/Testimonial";
+import Team from "./component/Team";
+import Services from "./component/Services";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: containerRef.current,
+      smooth: true,
+    });
+
+    return () => scroll.destroy();
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div data-scroll-container ref={containerRef}>
+      <section data-scroll-section id="home">
+        <HomePage />
+      </section>
+
+      <section data-scroll-section id="about">
+        <About />
+      </section>
+
+      <section data-scroll-section id="services">
+        <Services />
+      </section>
+
+      <section data-scroll-section id="appointment">
+        <Appointment />
+      </section>
+
+      <section data-scroll-section id="hc">
+        <Hc />
+      </section>
+
+      <section data-scroll-section id="team">
+        <Team />
+      </section>
+
+      <section data-scroll-section id="testimonial">
+        <Testimonial />
+      </section>
+
+      <section data-scroll-section id="process">
+        <Process />
+      </section>
+
+      <section data-scroll-section id="s2">
+        <S2 />
+      </section>
+
+      <section data-scroll-section id="footer">
+        <Footer />
+      </section>
+    </div>
+  );
 }
 
 export default App;

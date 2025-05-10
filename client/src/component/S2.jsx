@@ -24,8 +24,8 @@ const blogPosts = [
 
 const HealthBlogs = () => {
   return (
-    <section className="blogs-section">
-      <div className="blogs-header">
+    <section className="blogs-section" data-scroll>
+      <div className="blogs-header" data-scroll data-scroll-speed="1.5">
         <span className="latest-news">● Our latest news</span>
         <h2>
           Check out our most recent <br /> <span>health blogs.</span>
@@ -33,12 +33,14 @@ const HealthBlogs = () => {
         <button className="view-all-posts">View all Post →</button>
       </div>
 
-      <div className="blogs-grid">
+      <div className="blogs-grid" data-scroll data-scroll-speed="1.2">
         {blogPosts.map((post, index) => (
           <div
             key={index}
             className={`blog-card ${post.isIconCard ? 'icon-card' : ''}`}
             style={post.image ? { backgroundImage: `url(${post.image})` } : {}}
+            data-scroll
+            data-scroll-speed="1"
           >
             <span className="blog-tag">● {post.category}</span>
             <div className="blog-content">

@@ -26,14 +26,14 @@ const doctors = [
 
 const TeamSection = () => {
   return (
-    <section className="team-section">
-      <button className="team-button">Meet our team</button>
-      <h2 className="team-heading">
+    <section className="team-section" data-scroll>
+      <button className="team-button" data-scroll data-scroll-speed="1.5">Meet our team</button>
+      <h2 className="team-heading" data-scroll data-scroll-speed="1.5">
         Experienced and <span className="highlight">Skilled Team</span> of Experts
       </h2>
-      <div className="team-grid">
+      <div className="team-grid" data-scroll data-scroll-speed="1">
         {doctors.map((doc, index) => (
-          <div key={index} className="team-card">
+          <div key={index} className="team-card" data-scroll data-scroll-speed="1">
             <img src={img} alt={doc.name} className="team-image" />
             <h3 className="team-name">{doc.name}</h3>
             <p className="team-title">{doc.title}</p>
