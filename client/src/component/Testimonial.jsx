@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../Style/Testimonial.css";
 import image from "../assets/image/d6.jpg"
 const testimonials = [
   {

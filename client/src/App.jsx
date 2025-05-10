@@ -6,6 +6,8 @@ import Team from "./component/Team"
 import Hc from './component/Hc'
 import Testimonial from './component/Testimonial'
 import Footer from './component/Footer'
+import S2 from './component/S2'
+import './App.css'
 // import Process from './component/Process'
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Team/>
         <Testimonial/>
         {/* <Process/> */}
+        <S2/>
         <Footer/>
     </div>
   );

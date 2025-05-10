@@ -1,5 +1,4 @@
 import React from 'react';
-import "../Style/About.css";
 import doctorImg from "../assets/image/d2.jpg";
 export default function About() {
   return (

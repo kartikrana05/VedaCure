@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Style/Footer.css';
 import { FaPhone, FaClock, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import logo from '../assets/image/logo.jpg'
 const Footer = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import "../Style/Team.css"; 
 import img from "../assets/image/d5.jpg"
 
 const doctors = [

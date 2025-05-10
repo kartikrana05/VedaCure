@@ -1,6 +1,5 @@
 import React from "react";
 import doctorImg from "../assets/image/grpdoc.jpg"; // Replace with your local image path
-import "../Style/Appoint.css";
 export default function Appointment() {
   return (
     <div className="appointment-container">

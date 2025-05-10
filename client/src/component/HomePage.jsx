@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import doctorImg from "../assets/image/doctor.jpg";
-import "../Style/HomePage.css";
 import About from "./About";
 
 

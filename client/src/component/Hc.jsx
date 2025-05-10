@@ -1,5 +1,4 @@
 import React from "react";
-import "../Style/Hc.css";
 import docimg from"../assets/image/d3.jpg"
 const Healthcare = () => {
   return (
