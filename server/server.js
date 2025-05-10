@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', userRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.get('/', (req, res) => {
-  console.log("Hello World!");
-  res.json({"message":'Hello World!'});
+  console.log("Hello World!!");
+  res.json({"message":'Hello World!!'});
 });
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
