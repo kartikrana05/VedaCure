@@ -16,7 +16,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.get('/', (req, res) => {
   console.log("Hello World!!");
-  res.json({"message":'Hello World!!'});
+  res.json({"message":'Hello World!'});
 });
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
