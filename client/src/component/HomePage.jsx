@@ -1,9 +1,11 @@
 import React from "react";
 import doctorImg from "../assets/image/doctor.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const navigate = useNavigate();
+
   return (
     <div id="home" className="container" data-scroll-section>
       {/* Navbar */}

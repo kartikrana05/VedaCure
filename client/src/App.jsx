@@ -9,13 +9,14 @@ import {
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
-// Pages
+import './App.css';
+import './styles/Onboarding.css';
+
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import UserDashBoardPage from './pages/UserDashBoardPage';
 import DoctorProfile from './pages/DoctorProfile';
 
-// Homepage components
 import About from "./component/About";
 import Appointment from "./component/Appointment";
 import Footer from "./component/Footer";
@@ -26,10 +27,6 @@ import S2 from "./component/S2";
 import Testimonial from "./component/Testimonial";
 import Team from "./component/Team";
 import Services from "./component/Services";
-
-// Styles
-import './App.css';
-import './styles/Onboarding.css';
 
 // Assets
 import imgFindDoctors from './assets/3725520.jpg';
