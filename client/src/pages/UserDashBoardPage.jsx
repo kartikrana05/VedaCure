@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/UserDashBoardPage.css";
-import doctorImg from "../assets/3725520.jpg";
+import doctorImg from "../assets/doctor-smiling-with-stethoscope.jpg";
 
 const symptomsList = [
   "Covid", "Cough", "Fever", "Heart", "Tooth", "Pediatric", "Urologist", "Allergies",
@@ -60,10 +60,6 @@ export default function UserDashBoardPage() {
 
   return (
     <div className="user-dashboard-modern-wrapper">
-      <header className="user-dashboard-header">
-        <span className="logo">DoctorzBook</span>
-        <button className="logout-btn">Log Out</button>
-      </header>
       <main className="modern-main">
         <div className="greeting-block">
           <div className="user-avatar" />
