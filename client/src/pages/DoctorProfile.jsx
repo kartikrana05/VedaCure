@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/DoctorProfile.css";
-import doctorImg from "../assets/3725520.jpg";
+import doctorImg from "../assets/doctor-smiling-with-stethoscope.jpg";
 
 const doctorData = {
   1: {
