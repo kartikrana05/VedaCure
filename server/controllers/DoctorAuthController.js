@@ -52,3 +52,21 @@ export const login= async (req,res)=>{
         res.status(500).json({ message: "Server error" });
     }
 };
+export const updateProfile = async (req, res) => {
+    try {
+        const { name, username, email, specialization, experience, phone, address, licenseNumber } = req.body;
+        const doctorId = req.doctor._id; // Assuming you have the doctor's ID in req.doctor
+        const updatedDoctor = await Doctor.findByIdAndUpdate(
+            doctorId,
+            { name, username, email, specialization, experience, phone, address, licenseNumber },
+            { new: true }
+        );
+        if (!updatedDoctor) {
+            return res.status(404).json({ message: "Doctor not found" });
+        }
+        res.status(200).json({ message: "Profile updated successfully", doctor: updatedDoctor });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+};

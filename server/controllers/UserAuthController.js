@@ -59,3 +59,24 @@ export const login = async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 };
+export const updateProfile= async (req, res) => {
+    try {
+        const { name, username, email, phone } = req.body;
+        const userId = req.user._id;
+
+        const updatedUser = await User.findByIdAndUpdate(
+            userId,
+            { name, username, email, phone },
+            { new: true }
+        );
+
+        if (!updatedUser) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        res.status(200).json({ message: "Profile updated successfully", user: updatedUser });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+};
