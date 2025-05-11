@@ -7,6 +7,7 @@ VedaCure is a full-stack telehealth solution built to make healthcare accessible
 Designed with inspiration from the pandemic-era challenges, VedaCure aims to eliminate delays, bridge the doctor-patient gap, and offer a smarter way to connect with healthcare professionals using cutting-edge technology.
 
 # LIVE DEMO
+https://www.canva.com/design/DAGnKeIfk9c/OA9ByxuGn7s5Kw1-a8oqSA/edit?utm_content=DAGnKeIfk9c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 Backend deployed on render
 https://veda-cure.onrender.com
