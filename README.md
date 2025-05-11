@@ -11,11 +11,31 @@ Designed with inspiration from the pandemic-era challenges, VedaCure aims to eli
 
 # PHOTOS
 
+API Testing
+
+![WhatsApp Image 2025-05-11 at 17 26 59_feeb29e0](https://github.com/user-attachments/assets/6416f190-414f-40f2-a075-5a046cfbdd74)
+![WhatsApp Image 2025-05-11 at 17 26 59_c1a1d434](https://github.com/user-attachments/assets/69ff1589-c8dd-4b24-8deb-8a63fc11528c)
+![WhatsApp Image 2025-05-11 at 17 26 59_669fb42c](https://github.com/user-attachments/assets/21e16b0e-1a1e-48af-a18d-48090b7c0738)
+
+
+
+MongoDB Collection
+
+![WhatsApp Image 2025-05-11 at 17 28 14_bfdfe710](https://github.com/user-attachments/assets/06cd7e38-3b60-4534-943e-1ace87cc4851)
+
+
+
+Veda (healthcare assistant) built using chatbase (Integration left)
+
+![WhatsApp Image 2025-05-11 at 17 39 42_e8c530ab](https://github.com/user-attachments/assets/900c3831-8d42-4896-a055-fedf435774dc)
+
 
 # Features
 📹 Real-Time Video Consultations (Pending Integration)
 
 🔐 Secure Patient Information Management
+
+📩 Email/Profile Verification by Nodemailer
 
 💳 Payment Integration via Stripe (Pending)
 
