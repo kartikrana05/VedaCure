@@ -8,6 +8,9 @@ Designed with inspiration from the pandemic-era challenges, VedaCure aims to eli
 
 # LIVE DEMO
 
+Backend deployed on render
+https://veda-cure.onrender.com
+
 
 # PHOTOS
 
