@@ -9,6 +9,10 @@ Designed with inspiration from the pandemic-era challenges, VedaCure aims to eli
 # LIVE DEMO
 https://www.canva.com/design/DAGnKeIfk9c/OA9ByxuGn7s5Kw1-a8oqSA/edit?utm_content=DAGnKeIfk9c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+https://github.com/user-attachments/assets/b6d386a6-29d0-449a-a4f9-2e5bca12269e
+
+
+
 Backend deployed on render
 https://veda-cure.onrender.com
 
