@@ -2,7 +2,7 @@ import express from 'express';
 import { register, login,updateProfile,verifyOtp,getUserProfile } from '../controllers/UserAuthController.js';
 import { authenticateDoctor, authenticateUser } from '../middleware/middleware.js';
 import { getAllDoctors } from '../controllers/DoctorAuthController.js';
-import { bookAppointment, getAvailabilityForPatient } from '../controllers/AvailabilityController.js';
+import { bookAppointment, getAvailabilityForPatient ,getPatientAppointments } from '../controllers/AvailabilityController.js';
 import Appointment from '../models/Appointment.js';
 
 
@@ -18,5 +18,5 @@ router.get('/availability', authenticateUser, getAvailabilityForPatient);
 // get all doctors
 router.get('/all', getAllDoctors);
 router.post('/bookappointment', authenticateUser, bookAppointment);
-
+router.get('/appointments', authenticateUser, getPatientAppointments);
 export default router;

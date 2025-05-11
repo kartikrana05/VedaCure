@@ -122,3 +122,44 @@ export const bookAppointment = async (req, res) => {
     res.status(500).json({ message: "Server error. Could not book appointment." });
   }
 };
+
+
+
+
+
+
+// Add to userController.js (for patients)
+export const getPatientAppointments = async (req, res) => {
+  try {
+    const patientId = req.user._id;
+    const appointments = await Appointment.find({ patient: patientId })
+      .populate('doctor', 'name specialization phone')
+      .sort({ date: -1 });
+
+    res.status(200).json({
+      message: "Patient appointments retrieved successfully",
+      appointments
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Failed to retrieve patient appointments" });
+  }
+};
+
+// Add to doctorController.js (for doctors)
+export const getDoctorAppointments = async (req, res) => {
+  try {
+    const doctorId = req.doctor._id;
+    const appointments = await Appointment.find({ doctor: doctorId })
+      .populate('patient', 'name phone email')
+      .sort({ date: -1 });
+
+    res.status(200).json({
+      message: "Doctor appointments retrieved successfully",
+      appointments
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Failed to retrieve doctor appointments" });
+  }
+};
