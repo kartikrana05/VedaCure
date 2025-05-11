@@ -78,7 +78,6 @@ The application is built using the MERN stack and has used best coding practices
 -Handling form validations for booking with proper UX
 
 # Current Status
-Feature	Status
 
 Patient Login & Doctor Search	                    ✅ Completed
 
