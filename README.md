@@ -13,13 +13,37 @@ https://github.com/user-attachments/assets/b6d386a6-29d0-449a-a4f9-2e5bca12269e
 
 
 
-Backend deployed on render
+# Backend deployed on render
 https://veda-cure.onrender.com
 
+# Frontend Pages
+![WhatsApp Image 2025-05-11 at 22 31 34_5d257a13](https://github.com/user-attachments/assets/968696ce-6334-40ed-9d43-c4f02112682e)
 
-# PHOTOS
+![WhatsApp Image 2025-05-11 at 22 31 35_e4bc90f4](https://github.com/user-attachments/assets/d5083637-c956-4fbe-995b-34eacd2a160b)
 
-API Testing
+![WhatsApp Image 2025-05-11 at 22 31 36_8f4a6849](https://github.com/user-attachments/assets/825a9400-98f8-4b95-b654-036fe394dcc2)
+
+![WhatsApp Image 2025-05-11 at 22 31 36_78d9166b](https://github.com/user-attachments/assets/abc94ee4-e403-4b46-9cdb-459d0cbdbada)
+
+![WhatsApp Image 2025-05-11 at 22 31 37_07194d14](https://github.com/user-attachments/assets/c0dd028e-d442-4a6f-85f7-a5ee9245b864)
+
+![WhatsApp Image 2025-05-11 at 22 31 37_6d658455](https://github.com/user-attachments/assets/02e76650-9a90-4c89-a395-5232bb20f025)
+
+![WhatsApp Image 2025-05-11 at 22 31 38_85bec4d0](https://github.com/user-attachments/assets/d4a67aaa-84e7-47a7-9021-5ee2f9376198)
+
+![WhatsApp Image 2025-05-11 at 22 31 40_198875b6](https://github.com/user-attachments/assets/b87e3ab3-dd7a-4426-b7cc-06c1e1c96ba6)
+
+![WhatsApp Image 2025-05-11 at 22 31 39_f76b7cd9](https://github.com/user-attachments/assets/c14befa7-b6d8-4ba1-aa16-c9dae1acece2)
+
+![WhatsApp Image 2025-05-11 at 22 31 41_e9907082](https://github.com/user-attachments/assets/d90cff50-6e34-44ff-bb9f-75f0d449fcd3)
+
+![WhatsApp Image 2025-05-11 at 22 31 39_fabf98a9](https://github.com/user-attachments/assets/7a6b6b3e-6cc9-4a68-9142-00bbba068c6c)
+
+![WhatsApp Image 2025-05-11 at 22 31 39_b7c6a321](https://github.com/user-attachments/assets/25e0e84a-2523-4bc3-9d8a-c46f1933b342)
+
+# API Testing
+
+- API Testing	: Postman
 
 ![WhatsApp Image 2025-05-11 at 17 26 59_feeb29e0](https://github.com/user-attachments/assets/6416f190-414f-40f2-a075-5a046cfbdd74)
 ![WhatsApp Image 2025-05-11 at 17 26 59_c1a1d434](https://github.com/user-attachments/assets/69ff1589-c8dd-4b24-8deb-8a63fc11528c)
@@ -89,9 +113,6 @@ The application is built using the MERN stack and has used best coding practices
 - Real-time Video	: WebRTC (Pending)
 - Payment Gateway	: Razorpay (Pending)
 - Transcription	: Google Cloud Speech-to-Text (Pending)
-
-# Testing
-- API Testing	: Postman
 
 # Challenges We Faced
 -Connecting backend to the desired frontend components
