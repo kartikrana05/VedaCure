@@ -59,8 +59,7 @@ The application is built using the MERN stack and has used best coding practices
 - Backend	 :  Node.js with Express
 - Database :  MongoDB
 - Real-time Video	: WebRTC (Pending)
-- Video Conferencing : Twilio Video (Pending)
-- Payment Gateway	: Stripe (Pending)
+- Payment Gateway	: Razorpay (Pending)
 - Transcription	: Google Cloud Speech-to-Text (Pending)
 
 # Testing
